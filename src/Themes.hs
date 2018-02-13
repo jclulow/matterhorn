@@ -331,6 +331,11 @@ usernameColors =
     , fg brightBlue
     , fg brightMagenta
     , fg brightCyan
+    --, fg (Color240 200)
+    --, fg (Color240 160)
+    --, fg (Color240 39)
+    --, fg (Color240 154)
+    --, fg (Color240 48)
     ]
 
 -- Functions for dealing with Skylighting styles

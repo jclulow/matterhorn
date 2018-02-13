@@ -343,7 +343,7 @@ renderCurrentChannelDisplay st hs = (header <+> conn) <=> messages
             viewport (ChannelMessages cId) Vertical $
             cached (ChannelMessages cId) $
             vBox $ (withDefAttr loadMoreAttr $ hCenter $
-                    str "<< Press C-b to load more messages >>") :
+                    str "<< Press C-r to load more messages >>") :
                    (F.toList $ renderSingleMessage st hs editCutoff <$> channelMessages)
         MessageSelect ->
             renderMessagesWithSelect (st^.csMessageSelect) channelMessages
