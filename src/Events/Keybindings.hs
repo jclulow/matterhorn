@@ -118,13 +118,13 @@ defaultBindings ev =
                        ]
 
         -- channel-scroll-specific
-        LoadMoreEvent -> [ ctrl (key 'b') ]
+        LoadMoreEvent -> [ ctrl (key 'r') ]
 
         -- scrolling events
         ScrollUpEvent -> [ kb Vty.KUp ]
         ScrollDownEvent -> [ kb Vty.KDown ]
-        PageUpEvent -> [ kb Vty.KPageUp ]
-        PageDownEvent -> [ kb Vty.KPageDown ]
+        PageUpEvent -> [ ctrl (key 'b') ]
+        PageDownEvent -> [ ctrl (key 'f') ]
         ScrollTopEvent -> [ kb Vty.KHome ]
         ScrollBottomEvent -> [ kb Vty.KEnd ]
 
