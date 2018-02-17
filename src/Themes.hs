@@ -337,6 +337,7 @@ usernameAttr i = "username" <> (attrName $ show i)
 
 colorUsername :: Text -> Text -> Widget a
 colorUsername username display =
+  if username == "josh.clulow" then txt (display) else
   withDefAttr (usernameAttr h) $ txt (display)
     where h = hash username `mod` length usernameColors
 
